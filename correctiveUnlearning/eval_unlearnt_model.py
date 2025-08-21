@@ -9,6 +9,7 @@ from src.data.components.fastmri_transform_utils import center_crop_to_smallest
 from src.models.components.varnet import VarNet
 from src.data.components.fastmri_transform import VarNetDataTransform, EquiSpacedMaskFunc
 
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Evaluate unlearnt model and plot validation images")
     parser.add_argument("--checkpoint", type=str, default="unlearned_model.pth", help="Path to model checkpoint")
